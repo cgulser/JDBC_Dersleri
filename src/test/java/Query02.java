@@ -31,5 +31,10 @@ public class Query02 {
         while (veri2.next()){
             System.out.printf("%-6d %-15.15s %-8s %-8s\n", veri2.getInt(1), veri2.getString(2), veri2.getString(3), veri2.getString(4));
         }
+
+        con.close();
+        st.close();
+        veri.close();
+
     }
 }
